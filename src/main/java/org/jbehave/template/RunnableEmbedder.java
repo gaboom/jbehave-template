@@ -20,11 +20,7 @@ public class RunnableEmbedder extends InjectableEmbedder implements Runnable {
         injectedEmbedder().runStoriesAsPaths(builder.findPaths());
     }
 
-    /**
-     * Main Entry Point.
-     */
     public static void main(String[] args) {
-
         RunnableEmbedder runnableEmbedder = new RunnableEmbedder();
         runnableEmbedder.useEmbedder(builder.buildEmbedder());
         runnableEmbedder.run();
